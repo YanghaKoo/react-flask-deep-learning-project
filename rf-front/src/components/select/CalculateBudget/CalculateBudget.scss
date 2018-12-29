@@ -1,0 +1,18 @@
+.calculate-budget{
+  width : 100%;
+  height: 80px;
+  background: #343a40;
+  color : white;
+  font-size : 40px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  left : 0;
+  bottom : 0;
+  @media only screen and (max-width: 1000px) {  
+		font-size : 20px;
+  }
+}

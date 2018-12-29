@@ -1,0 +1,14 @@
+.class-list {
+  margin-bottom: 70px;
+  padding : 30px;
+}
+
+.error{
+  width : 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height : calc(100vh - 200px);
+  font-size: 60px;
+  font-weight: 800;
+}

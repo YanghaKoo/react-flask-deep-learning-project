@@ -1,0 +1,116 @@
+$baseColor: #8f8681;
+
+.previewComponent {
+  width: 1000px;
+  height: 600px;
+  background: #f1f3f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  
+  .top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .budget {
+      border-bottom: 4px solid $baseColor;
+      border-right: 4px solid $baseColor;
+      border-top: 1px solid $baseColor;
+      border-left: 1px solid $baseColor;
+      padding: 10px;
+      margin: 15px;
+      width: 400px;
+      height: 33px;
+      font-size: 30px;
+      font-weight: 800;
+      text-align: center;
+      background-color: #f1f3f5;
+      border-radius: 20px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .fileInput {
+      border-bottom: 4px solid $baseColor;
+      border-right: 4px solid $baseColor;
+      border-top: 1px solid $baseColor; 
+      border-left: 1px solid $baseColor;
+      padding: 10px;
+      margin: 15px;
+      width: 420px;
+      height: 33px;
+      font-size: 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        background: #e7e5e5;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .imgPreview {
+    text-align: center;
+    margin: 5px 15px;
+    height: 400px;
+    width: 900px;
+    border-left: 1px solid $baseColor;
+    border-right: 1px solid $baseColor;
+    border-top: 5px solid $baseColor;
+    border-bottom: 5px solid $baseColor;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .submitButton {
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background: white;
+    border: 4px solid $baseColor;
+    border-radius: 15px;
+    font-weight: 1000;
+    font-size: 20pt;
+    cursor: pointer;
+    width: 900px;
+    color: $baseColor;
+    &:hover {
+      background: #efefef;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {    
+    height: 700px;
+    width : 100%;
+    margin : 0 auto;
+    
+    .top {
+      display: flex;
+      flex-direction: column;  
+       
+      .budget{
+        width: 300px !important;
+      }
+      .fileInput{
+        width: 300px !important;
+      }
+    }
+    .imgPreview{
+      width : 300px !important;
+    }
+    .submitButton{
+      width : 300px !important;      
+    }
+  }
+}
+
+.loading {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
